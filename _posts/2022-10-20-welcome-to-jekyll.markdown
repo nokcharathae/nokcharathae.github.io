@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: wow
 title:  "Welcome to Jekyll!"
 date:   2022-10-20 14:51:04 +0900
 categories: jekyll update
