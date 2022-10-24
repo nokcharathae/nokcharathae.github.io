@@ -1,15 +1,16 @@
-<article class="post">
-	<header class="post-header">
-		<div class="post-title"> 
-			{{ page.title | escape }}
-		</div>
-		<time class="post-date dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-			{%- assign date_format = site.date_forma | default: "%Y/%m/%d" -%}
-			{{ page.date | date: date_format }}
-		</time>		
-	</header>
 
-	<div class="post-content">
-		{{ content }}
-	</div>
-</article>
+<div id="posts" class="posts-expand">
+  {% assign post = page %}
+  {% include _macro/post.html %}
+  <div class="post-spread">
+    {% if site.jiathis %}
+      {% include _partials/share/jiathis.html %}
+    {% elsif site.baidushare %}
+      {% include _partials/share/baidushare.html %}
+    {% elsif site.add_this_id %}
+      {% include _partials/share/add-this.html %}
+    {% elsif site.duoshuo_shortname and site.duoshuo_share %}
+      {% include _partials/share/duoshuo_share.html %}
+    {% endif %}
+  </div>
+</div>

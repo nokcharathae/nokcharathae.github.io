@@ -1,4 +1,6 @@
 ---
-layout: default
+layout: layout
 ---
-{%- include category.html -%}
+
+{% assign __ = site.data.languages[site.language] %}
+{% include category.html %}
