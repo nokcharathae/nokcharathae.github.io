@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "MathJax with Jekyll"
-date: 2014-02-16
+date: 2022-10-24 00:00:03
 categories:
  - tutorial
 tags: [resources, jekyll]
