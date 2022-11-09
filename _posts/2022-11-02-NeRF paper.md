@@ -17,6 +17,8 @@ comments: true
 * * * 
 
 <br>
+
+[Code Review][NeRF Code Review](/review/2022/11/02/NeRF-code/){:target="_blank"}
 # INTRODUCTION
 ## Neural 3D Represenation
 
@@ -34,15 +36,23 @@ Convolution 및 Pooling과 같은 기계 학습 작업은 그리드 구조가 �
 {: .text-center }
 
 ### Explicit Representations 
-Point cloud, 그러나 지금까지 이러한 모델은 일반적으로 합성 3D 형상 데이터 세트에서 얻은 실제 3D geometry의 필요로 인해 한계가 있었습니다.
+Voxel, Point cloud이나 Mesh와 같은 전통적인 방식으로 3D Object를 나타내는 방법입니다. Voxel은 큰 resolution을 표현하지 못하고, Point cloud는 topology의 표현을 잃고, Mesh는 neural network로 학습하기 어렵습니다. 또한, 지금까지 이러한 모델은 일반적으로 합성 3D 형상 데이터 세트에서 얻은 실제 3D geometry의 필요로 인해 한계가 있었습니다.
 
 ### Implicit Representations
-이에 최근 컴퓨터 비전의 연구 방향은 3D 공간 위치를 implicit representation으로 직접 매핑하는 deep network를 최적화하여 해당 weight를 통해 연속적인 3D 모양 집합으로 implicit하게 표현하는 것이었습니다
-
-#### test
+이에 최근 컴퓨터 비전의 연구 방향은 3D 공간 위치를 implicit representation으로 직접 매핑하는 deep network를 최적화하여 해당 weight를 통해 연속적인 3D 모양 집합으로 implicit하게 표현하는 것이었습니다.
 
 
-그러나 지금까지 이러한 모델은 일반적으로 explicit한 모델의 성능과 크게 다를 바가 없거나, 합성 3D 형상 데이터 세트에서 얻은 실제 3D geometry가 필요하다는 한계가 있었습니다.
+그러나 지금까지 이러한 모델은 일반적으로 explicit한 모델의 성능과 크게 다를 바가 없거나, 합성 3D 형상 데이터 세트에서 얻은 실제 3D geometry가 필요하다는 한계가 있었습니다. 이에 NeRF는 5D radiance field를 인코딩하여 복잡한 장면의 novel view를 사실적으로 렌더링하여, 고해상도 geometry 및 외관을 나타내는 결과를 보여줍니다.
+
+
+## Novel View Synthesis
+NeRF는 성능이 높지 않았던 View Synthesis 분야에 새로운 방식을 제안하였습니다. 
+View Synthesis는 특정 몇 개의 시점에서 촬영한 이미지셋으로부터 주어지지 않은 위치와 방향에서 바라본 대상의 novel view를 연속적으로 합성해내는 기술입니다. 
+
+NeRF 이전에도 view synthesis와 관련한 연구로 mesh-based representation이나 volumetric representation과 같은 방법이 연구되었으나,
+이러한 방법들은 이산 샘플링으로 인한 시간과 공간의 복잡성으로 인해 더 나은 해상도로 확장할 수 없는 한계를 가졌습니다. 
+NeRF는 fully connected neural network의 파라미터를 통해 연속 volume을 인코딩함으로써 이 문제를 회피하였으며,
+이는 이전의 volumetric 접근 방식보다 더 저렴할 뿐만 아니라 훨씬 더 높은 품질의 렌더링 결과를 보여줍니다.
 
 
 # 참고
