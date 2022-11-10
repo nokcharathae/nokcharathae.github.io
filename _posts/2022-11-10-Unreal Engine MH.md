@@ -36,8 +36,10 @@ Unreal Engine 5에서 Quixel Bridge열어 MetaHuman이나 asset을 다운받을 
 
 ## Body Animation
 [mixamo](https://www.mixamo.com/#/)에서 애니메이션을 다운받을 수 있습니다.
+![Body Animation](/assets/images/Image_UE5/body_anim.png)
 ## Face Animation
-
+`Layered blend per bone` 노드를 사용하면 정의된 골격 세트를 기준으로 여러 동적 혼합 포즈를 혼합할 수 있습니다. 이를 이용해 MetaHuman의 Live Link Pose와 얼굴 애니메이션을 blend하여 표정 애니메이션을 나타낼 수 있습니다.
+![Face Animation](/assets/images/Image_UE5/face_anim_bp.png)
 
 # 애니메이션 생성 및 수정하는 방법
 
@@ -49,4 +51,4 @@ Unreal Engine 5에서 Quixel Bridge열어 MetaHuman이나 asset을 다운받을 
 * https://docs.unrealengine.com/5.0/en-US/quixel-bridge-plugin-for-unreal-engine/
 * https://docs.unrealengine.com/5.0/en-US/animation-retargeting-in-unreal-engine/
 * https://www.youtube.com/watch?v=5Or8yQ_QecQ&ab_channel=RyanLaley
-
+* https://forums.unrealengine.com/t/metahuman-head-floating-with-body-and-face-animation/559180
