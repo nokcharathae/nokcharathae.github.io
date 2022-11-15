@@ -19,7 +19,8 @@ Global Distance Field는 카메라를 따르는 동안 해당 Level에서 Signed
 
 객체 거리 필드의 해상도가 낮다는 것은 모든 것에 사용할 수 있다는 것을 의미하지만 하늘 폐색을 위한 원뿔 추적을 계산할 때 전역 거리 필드가 더 멀리 샘플링되는 동안 음영이 있는 지점 근처에서 샘플링됩니다.
 
-표시 > 시각화 > 전역 거리 필드를 클릭하여 뷰포트에서 전역 거리 필드를 시각화할 수 있습니다.
+#### Visualize Global Distance Field
+뷰포트에서 전역 거리 필드를 시각화기 위해서는 [Show] - [Visualize] - [Global Distance Field]를 체크합니다.
 
 # 참고
 * https://www.unrealengine.com/en-US/metahuman?sessionInvalidated=true
