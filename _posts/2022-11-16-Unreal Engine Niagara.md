@@ -21,6 +21,7 @@ Global Distance Field는 카메라를 따르는 동안 해당 Level에서 Signed
 
 #### Visualize Global Distance Field
 뷰포트에서 전역 거리 필드를 시각화기 위해서는 [Show] - [Visualize] - [Global Distance Field]를 체크합니다.
+![Visualize GDF](/assets/images/Image_UE5/EnableGDFViewMode.webp)
 
 # 참고
 * https://www.unrealengine.com/en-US/metahuman?sessionInvalidated=true
