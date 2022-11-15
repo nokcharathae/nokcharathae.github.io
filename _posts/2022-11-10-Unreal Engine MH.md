@@ -29,7 +29,7 @@ Unreal Engine 5에서 Quixel Bridge열어 MetaHuman이나 asset을 다운받을 
 
 # 애니메이션 적용하는 방법 
 ## Animation Retargeting
-[Animation Retargeting](https://docs.unrealengine.com/5.0/en-US/animation-retargeting-in-unreal-engine/)은 동일한 skeleton asset을 사용하지만 비율이 크게 다를 수 있는 캐릭터 간에 애니메이션을 재사용할 수 있는 기능입니다. 대상을 다시 지정하면 모양이 다른 캐릭터의 애니메이션을 사용할 때 애니메이션 골격이 다르거나 불필요하게 변형되는 것을 방지할 수 있습니다. 애니메이션 리타겟팅을 사용하면 유사한 골격 계층을 공유하고 **Rig**를 사용하여 한 골격에서 다른 골격으로 애니메이션 데이터를 전달하는 한 서로 다른 skeleton asset을 사용하는 캐릭터 간에 애니메이션을 공유할 수도 있습니다.
+[Animation Retargeting](https://docs.unrealengine.com/5.0/en-US/animation-retargeting-in-unreal-engine/)은 동일한 skeleton asset을 사용하지만 비율이 크게 다를 수 있는 캐릭터 간에 애니메이션을 재사용할 수 있는 기능입니다. 대상을 다시 지정하면 모양이 다른 캐릭터의 애니메이션을 사용할 때 애니메이션 골격이 다르거나 불필요하게 변형되는 것을 방지할 수 있습니다. 애니메이션 리타겟팅을 사용하면 유사한 골격 계층을 공유하고 **Rig**를 사용하여 한 골격에서 다른 골격으로 애니메이션 데이터를 전달하는 한 서로 다른 skeleton asset을 사용하는 캐릭터 간에 애니메이션을 공유할 수 있습니다.
 ![Animation Retargeting](/assets/images/Image_UE5/retarget.png)
 <iframe width="787" height="443" src="https://www.youtube.com/embed/5Or8yQ_QecQ" title="Unreal Engine 5 Tutorial - Animation Retargetting" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 애니메이션 리타겟팅은 위 튜토리얼 영상을 참고하여 새로운 skeleton의 애니메이션을 추출할 수 있습니다.
