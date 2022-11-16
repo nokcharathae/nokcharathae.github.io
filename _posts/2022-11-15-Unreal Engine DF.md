@@ -8,7 +8,7 @@ comments: true
 ---
 
 
-[Mesh Distance Fields](https://docs.unrealengine.com/4.27/en-US/BuildingWorlds/LightingAndShadows/MeshDistanceFields/){:target="_blank"}관련 Unreal Engine Documntation을 참고하여 작성되었습니다. Unreal Engine를 개발할 때 사용할 수 있는 Distance Field의 사용에 대한 개요를 서술합니다.
+[Mesh Distance Fields](https://docs.unrealengine.com/4.27/en-US/BuildingWorlds/LightingAndShadows/MeshDistanceFields/){:target="_blank"}관련 Unreal Engine Documentation을 참고하여 작성되었습니다. Unreal Engine를 개발할 때 사용할 수 있는 Distance Field의 사용에 대한 개요를 서술합니다.
 
 <!-- more -->
 
