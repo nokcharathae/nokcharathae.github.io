@@ -18,7 +18,7 @@ comments: true
 ## Signed Distance Field
 Static Mesh의 표면을 나타내기 위해서 **Signed Distance Field (SDF)**가 사용됩니다. Signed Distance Field란 위치를 입력으로 받아 해당 위치에서 object의 가장 가까운 부분까지의 거리를 출력하는 함수를 이용해 object를 나타내는 방식입니다. UE에서 이는 volume texture에 가장 가까운 표면까지의 거리를 저장하여 작동합니다. Mesh 외부의 모든 점은 양의 거리로 간주되고 메쉬 내부의 모든 점은 음의 거리로 저장합니다.  
 <p align="center"><img src="/assets/images/Image_UE5/SDF.png" width="300" height="300" /> </p>
-*[<span style='color:#adadad'>그림 1. Signed Distance Field가 픽셀 수준에서 어떻게 보이는지에 대한 예</span>](http://bytewrangler.blogspot.com/2011/10/signed-distance-fields.html){:target="_blank"}*
+*[<span style='color:#adadad'>그림 1. Signed Distance Field가 픽셀에서 어떻게 보이는지에 대한 예</span>](http://bytewrangler.blogspot.com/2011/10/signed-distance-fields.html){:target="_blank"}*
 {: .text-center }
 
 ## Mesh Distance Field
@@ -29,7 +29,7 @@ Level에 배치된 Actor는 모두 Mesh Distance Field로 구성됩니다. Mesh 
 *[<span style='color:#adadad'>Grazing Angle</span>](https://www.mathworks.com/help/radar/ref/grazingang.html){:target="_blank"}*
 {: .text-center }
 
-### Enabling Distance Fields
+### Enabling Mesh Distance Field
 Mesh Distance Field를 활성화하기 위해서는 [Edit] - [Project Settings] - [Rendering] - [Lighting] - [Generate Mesh Distance Fields]를 체크합니다.
 <p align="center"><img src="/assets/images/Image_UE5/GeneratedMeshDF.webp" width="300" height="300"/> </p>
 
