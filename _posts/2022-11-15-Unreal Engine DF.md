@@ -1,14 +1,14 @@
 ---
-title: Unreal Engine 5 Niagara System
+title: "[Unreal Engine] Distance Field"
 date: 2022-11-15 00:01:36
 categories:
-- Unreal Engine 5
-tags: UE5 Niagara
+- Unreal Engine
+tags: UE5 DistanceField
 comments: true
 ---
 
 
-[Unreal Engine 5] 나이아가라 사용법
+[Unreal Engine] [Mesh Distance Fields](https://docs.unrealengine.com/4.27/en-US/BuildingWorlds/LightingAndShadows/MeshDistanceFields/)관련 Unreal Engine Documntation을 참고하여 작성되었습니다. UE를 개발할 때 사용할 수 있는 Distance Field의 사용에 대한 개요를 서술합니다.
 
 <!-- more -->
 
@@ -42,8 +42,6 @@ Mesh Distance Field를 활성화하기 위해서는 [Edit] - [Project Settings] 
 
 ### Global Distance Field
 Global Distance Field는 해당 Level에서 카메라를 따라 Signed Distance Field occlusion을 사용하는 low-resolution Distance Field입니다. 이는 object 별 Mesh Distance Field의 캐시를 생성하고 카메라를 중심으로한 몇 개의 볼륨 텍스처인 clipmap으로 합성합니다. 새로 보이는 영역이나 장면 수정의 영향을 받는 영역만 업데이트하면 되기 때문에 구성 비용이 많이 들지 않습니다.
-
-Object Distance Field의 해상도가 낮다는 것은 모든 것에 사용할 수 있다는 것을 의미하지만, 하늘 폐색을 위한 원뿔 추적을 계산할 때 전역 거리 필드가 더 멀리 샘플링되는 동안 음영이 있는 지점 근처에서 샘플링됩니다.
 ![MDF](/assets/images/Image_UE5/GDFVisualization.webp)
 
 #### Visualize Global Distance Field

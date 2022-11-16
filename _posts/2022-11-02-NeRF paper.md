@@ -1,5 +1,5 @@
 ---
-title: NeRF Paper Review
+title: '[Review] NeRF Paper Review'
 date: 2022-11-03 00:00:42
 categories:
 - Review
