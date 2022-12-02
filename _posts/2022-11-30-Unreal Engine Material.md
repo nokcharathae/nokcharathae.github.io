@@ -11,6 +11,13 @@ comments: true
 
 <!-- more -->
 
+# Distance Field Material
+
+![slime.png](/assets/images/Image_UE5/distance_1.png)
+![slime.png](/assets/images/Image_UE5/distance_BP.png)
+Distance To Nearest Surface : 
+`VertexNormalWS` : world-space vertex normal을 출력합니다. WorldPositionOffset과 같이 vertex shader에서 실행되는 material 입력에만 사용할 수 있습니다. 이 기능은 mesh를 확대하거나 축소하는 데 유용합니다.
 
 # 참고
 * https://docs.unrealengine.com/5.0/en-US/unreal-engine-material-expressions-reference/
+* https://www.youtube.com/watch?v=tb8wZGMCPCw&ab_channel=UpsideDown
