@@ -1,8 +1,8 @@
 ---
-title: '[Review] NeRF Paper Review'
+title: '[Paper Review] NeRF Paper Review'
 date: 2022-11-03 00:00:42
 categories:
-- Review
+- Paper Review
 tags: NeRF
 comments: true
 ---
